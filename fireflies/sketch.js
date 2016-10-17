@@ -4,7 +4,7 @@ var amp, smoothed;
 var thresh;
 
 function preload(){
-	snd = loadSound('17.mp3')
+	snd = loadSound('Loud Pipes.mp3')
 }
 
 function setup(){
@@ -62,7 +62,9 @@ function mouseClicked(){
 function keyPressed(){
 	if(keyCode == ENTER){
 		snd.play();
-		snd.jump(120);
+	}
+	if(keyCode == ESCAPE){
+		snd.stop();
 	}
 }
 
